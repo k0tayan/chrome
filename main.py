@@ -13,7 +13,7 @@ translator = Translator()
 
 url = 'http://redgate.linguaporta.jp/'
 ID = ''
-password = 'cocet2600'
+password = ''
 
 useTranslation = False
 
@@ -217,7 +217,7 @@ if __name__ == '__main__':
     if (not (len(args)) == 1):
         if (args[1] == '-t'):
             useTranslation = True
-    if(ID==''):
-        print('Please write your UserID')
+    if(ID == '' or password == ''):
+        print('Please write your UserID or password')
         exit()
     main()
